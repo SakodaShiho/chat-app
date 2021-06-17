@@ -1,14 +1,23 @@
 import firebase from "firebase";
 
+const {
+  REACT_APP_FIREBASE_API_KEY,
+  REACT_APP_FIREBASE_AUTH_DOMAIN,
+  REACT_APP_FIREBASE_DATABASE_URL,
+  REACT_APP_FIREBASE_PROJECT_ID,
+  REACT_APP_FIREBASE_STORAGE_BUCKET,
+  REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  REACT_APP_FIREBASE_APP_ID,
+} = process.env;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCSsUAwNKakKbcnPjIDPivQD_JADKKp8J0",
-  authDomain: "chat-app-ff530.firebaseapp.com",
-  databaseURL:
-    "https://chat-app-ff530-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "chat-app-ff530",
-  storageBucket: "chat-app-ff530.appspot.com",
-  messagingSenderId: "10603597573",
-  appId: "1:10603597573:web:89b8b4b0f1d9fc76df316c",
+  apiKey: REACT_APP_FIREBASE_API_KEY,
+  authDomain: REACT_APP_FIREBASE_AUTH_DOMAIN,
+  databaseURL: REACT_APP_FIREBASE_DATABASE_URL,
+  projectId: REACT_APP_FIREBASE_PROJECT_ID,
+  storageBucket: REACT_APP_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+  appId: REACT_APP_FIREBASE_APP_ID,
 };
 
 firebase.initializeApp(firebaseConfig);
