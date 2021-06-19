@@ -17,6 +17,7 @@ const Main = ({ name }) => {
     <div className={classes.root}>
       <MessageList />
       <MessageInputField name={name} />
+      <p>test</p>
     </div>
   );
 };
